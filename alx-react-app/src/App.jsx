@@ -16,8 +16,8 @@ function App() {
       <div>
       <h1>User Profiles</h1>
       <UserProfile 
-        name="Ifeoma Dike"
-        age={34}
+        name="Alice"
+        age={25}
         bio="Software engineer passionate about React and building user-friendly applications. Loves hiking and photography in her free time."
       />
       
