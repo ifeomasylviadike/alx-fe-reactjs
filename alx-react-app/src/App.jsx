@@ -14,25 +14,19 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1>User Profiles</h1>
+      <UserProfile 
+        name="Ifeoma Dike"
+        age={34}
+        bio="Software engineer passionate about React and building user-friendly applications. Loves hiking and photography in her free time."
+      />
+      
+      <UserProfile 
+        name="Bob Smith"
+        age={35}
+        bio="Full-stack developer with 10 years of experience. Enjoys teaching coding and contributing to open-source projects."
+      />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
       <WelcomeMessage />
       <Header />
       <MainContent />

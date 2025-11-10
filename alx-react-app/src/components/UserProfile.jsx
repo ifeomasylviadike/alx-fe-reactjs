@@ -1,11 +1,11 @@
-function UserProfile() {
-    return (
-        <div>
-            <h2>Ifeoma Dike</h2>
-            <p>34 years</p>
-            <p>I am a Front End Developer</p>
-        </div>
-    );
+function UserProfile({ name, age, bio }) {
+  return (
+    <div>
+      <h2>{name}</h2>
+      <p>Age: {age}</p>
+      <p>{bio}</p>
+    </div>
+  );
 }
 
 export default UserProfile;
