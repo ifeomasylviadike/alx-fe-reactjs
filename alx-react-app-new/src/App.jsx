@@ -14,7 +14,9 @@ function App() {
   return (
     <>
       <div>
+        <header style={{ backgroundColor: '#4CAF50', color: 'white', textAlign: 'center' }}>
       <h1>User Profiles</h1>
+      </header>
       <UserProfile 
         name="Alice"
         age={25}
