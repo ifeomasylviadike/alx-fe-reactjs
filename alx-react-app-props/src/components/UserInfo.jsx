@@ -1,0 +1,3 @@
+function UserInfo() {
+  return <UserDetails />;
+}
