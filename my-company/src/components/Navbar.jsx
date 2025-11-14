@@ -1,46 +1,39 @@
-function Navbar({ currentPage, setCurrentPage }) {
+import { Link } from 'react-router-dom';
+
+function Navbar() {
   return (
     <nav style={{
-      backgroundColor: '#553030ff',
+      backgroundColor: '#333',
       padding: '15px',
       marginBottom: '20px'
     }}>
-      <button onClick={() => setCurrentPage('home')} style={{
+      <Link to="/" style={{
         color: 'white',
-        backgroundColor: 'transparent',
-        border: 'none',
+        textDecoration: 'none',
         margin: '0 15px',
-        fontSize: '18px',
-        cursor: 'pointer',
-        textDecoration: currentPage === 'home' ? 'underline' : 'none'
-      }}>Home</button>
-      <button onClick={() => setCurrentPage('about')} style={{
+        fontSize: '18px'
+      }}>Home</Link>
+      
+      <Link to="/about" style={{
         color: 'white',
-        backgroundColor: 'transparent',
-        border: 'none',
+        textDecoration: 'none',
         margin: '0 15px',
-        fontSize: '18px',
-        cursor: 'pointer',
-        textDecoration: currentPage === 'about' ? 'underline' : 'none'
-      }}>About</button>
-      <button onClick={() => setCurrentPage('services')} style={{
+        fontSize: '18px'
+      }}>About</Link>
+      
+      <Link to="/services" style={{
         color: 'white',
-        backgroundColor: 'transparent',
-        border: 'none',
+        textDecoration: 'none',
         margin: '0 15px',
-        fontSize: '18px',
-        cursor: 'pointer',
-        textDecoration: currentPage === 'services' ? 'underline' : 'none'
-      }}>Services</button>
-      <button onClick={() => setCurrentPage('contact')} style={{
+        fontSize: '18px'
+      }}>Services</Link>
+      
+      <Link to="/contact" style={{
         color: 'white',
-        backgroundColor: 'transparent',
-        border: 'none',
+        textDecoration: 'none',
         margin: '0 15px',
-        fontSize: '18px',
-        cursor: 'pointer',
-        textDecoration: currentPage === 'contact' ? 'underline' : 'none'
-      }}>Contact</button>
+        fontSize: '18px'
+      }}>Contact</Link>
     </nav>
   );
 }
