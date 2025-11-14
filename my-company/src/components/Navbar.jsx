@@ -5,33 +5,31 @@ function Navbar() {
     <nav style={{
       backgroundColor: '#333',
       padding: '15px',
-      marginBottom: '20px'
+      marginBottom: '20px',
+      display: 'flex',
+      justifyContent: 'space-around'
     }}>
       <Link to="/" style={{
         color: 'white',
         textDecoration: 'none',
-        margin: '0 15px',
         fontSize: '18px'
       }}>Home</Link>
       
       <Link to="/about" style={{
         color: 'white',
         textDecoration: 'none',
-        margin: '0 15px',
         fontSize: '18px'
       }}>About</Link>
       
       <Link to="/services" style={{
         color: 'white',
         textDecoration: 'none',
-        margin: '0 15px',
         fontSize: '18px'
       }}>Services</Link>
       
       <Link to="/contact" style={{
         color: 'white',
         textDecoration: 'none',
-        margin: '0 15px',
         fontSize: '18px'
       }}>Contact</Link>
     </nav>
